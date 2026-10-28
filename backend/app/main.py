@@ -26,6 +26,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import settings
 from app.api.summaries import router as summaries_router
+from app.api.articles import router as articles_router
 
 # Configure logging
 logging.basicConfig(
@@ -87,6 +88,7 @@ app.add_middleware(
 # Each router handles a specific domain (summaries, articles, etc.)
 # They are mounted on the app so their routes become available.
 app.include_router(summaries_router)
+app.include_router(articles_router)
 
 
 # --- Health Check Endpoint ---
