@@ -1,0 +1,71 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# ========================
+# Node.js / Frontend
+# ========================
+node_modules/
+frontend/dist/
+frontend/build/
+*.tsbuildinfo
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.local
+.env.*.local
+
+# ========================
+# IDE & Editor
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# Docker
+# ========================
+*.log
+
+# ========================
+# Testing / Coverage
+# ========================
+htmlcov/
+.coverage
+.pytest_cache/
+coverage/
+
+# ========================
+# Alembic
+# ========================
+# Don't ignore alembic migrations — those are code
+
+# ========================
+# Data (large files)
+# ========================
+*.csv
+*.json.gz
+!data/sample_abstracts/*.json
+!data/evaluation/*.json

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/*
+  MedLit AI — Design System
+  
+  Tailwind v4 uses CSS-first configuration via @theme.
+  We define our custom colors, fonts, and spacing here.
+  
+  Design philosophy: Clean, professional, medical-research aesthetic.
+  Dark mode by default with high-contrast text for readability.
+*/
+
+@theme {
+  /* Primary brand colors — a calm, trustworthy teal */
+  --color-primary-50: #ecfeff;
+  --color-primary-100: #cffafe;
+  --color-primary-200: #a5f3fc;
+  --color-primary-300: #67e8f9;
+  --color-primary-400: #22d3ee;
+  --color-primary-500: #06b6d4;
+  --color-primary-600: #0891b2;
+  --color-primary-700: #0e7490;
+  --color-primary-800: #155e75;
+  --color-primary-900: #164e63;
+  --color-primary-950: #083344;
+
+  /* Surface colors for dark theme */
+  --color-surface-900: #0f1117;
+  --color-surface-800: #161822;
+  --color-surface-700: #1e2130;
+  --color-surface-600: #282c3e;
+  --color-surface-500: #3a3f55;
+
+  /* Accent for highlights and warnings */
+  --color-accent-amber: #f59e0b;
+  --color-accent-emerald: #10b981;
+  --color-accent-rose: #f43f5e;
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
